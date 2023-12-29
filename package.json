@@ -9,19 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.29.1",
+    "@trigger.dev/nextjs": "^2.3.8",
+    "@trigger.dev/react": "^2.3.8",
+    "@trigger.dev/sdk": "^2.3.8",
+    "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "zod": "^3.22.4"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "typescript": "^5"
+  },
+  "trigger.dev": {
+    "endpointId": "imagegenerator-eD8e"
   }
 }
