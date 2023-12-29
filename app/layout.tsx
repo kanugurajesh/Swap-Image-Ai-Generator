@@ -21,12 +21,6 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <link
-          rel="preload"
-          href="/hero_use_case_v5.riv"
-          as="fetch"
-          crossOrigin="anonymous"
-        />
         <body className={inter.className}>
           <nav>
             <div className='flex p-10 items-center justify-between font-bold'>
