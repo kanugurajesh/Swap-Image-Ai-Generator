@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.1",
+    "@emailjs/browser": "^3.11.0",
     "@trigger.dev/nextjs": "^2.3.8",
     "@trigger.dev/react": "^2.3.8",
     "@trigger.dev/sdk": "^2.3.8",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
