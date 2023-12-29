@@ -1,13 +1,36 @@
-/* page.tsx styles */
+.a {
+    position: relative;
+    border: none;
+    padding-bottom: 2px;
+}
+
+.a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 10%;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.a:hover::before {
+    width: 100%;
+}
 
 .button {
-    background-color: #e84949; /* Green */
+    position: relative;
+    background-color: #e84949;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    z-index: 0;
+    border: #e84949 solid 3px;
 }
 
 .button::before {
@@ -19,6 +42,7 @@
     height: 100%;
     background-color: white;
     transition: width 0.3s ease-in-out;
+    z-index: -1;
 }
 
 .button:hover::before {
@@ -27,5 +51,11 @@
 
 .button:hover {
     background-color: #e84949;
-    color: white;
+    color: black;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.p {
+    z-index: 2;
 }

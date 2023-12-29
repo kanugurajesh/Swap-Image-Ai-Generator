@@ -3,6 +3,7 @@ import { UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import styles from '@/styles/Root.module.css'
 import './globals.css'
 import Link from 'next/link'
 
@@ -35,17 +36,17 @@ export default function RootLayout({
               </div>
               <div className='flex gap-8 items-center'>
                 <ul className='flex gap-5'>
-                  <li className='border-white border-b-2 hover:border-black'>
-                    <Link href="/Home">Home</Link>
+                  <li>
+                    <Link href="/Home" className={`${styles.a}`}>Home</Link>
                   </li>
-                  <li className='border-white border-b-2 hover:border-black'>
-                    <Link href="/About">About</Link>
+                  <li>
+                    <Link href="/About" className={`${styles.a}`}>About</Link>
                   </li>
-                  <li className='border-white border-b-2 hover:border-black'>
-                    <Link href="/Pricing">Pricing</Link>
+                  <li>
+                    <Link href="/Pricing" className={`${styles.a}`}>Pricing</Link>
                   </li>
-                  <li className='border-white border-b-2 hover:border-black'>
-                    <Link href="https://kanugurajesh.github.io">Blog</Link>
+                  <li>
+                    <Link href="https://kanugurajesh.github.io" className={`${styles.a}`}>Blog</Link>
                   </li>
                 </ul>
                 <UserButton />
