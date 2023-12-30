@@ -31,10 +31,14 @@ export default function RootLayout({
                   <h1 className='text-xl'>wap-Ai</h1>
                 </Link>
               </div>
-              <div>
 
+              <div className={`${styles.menu} flex flex-col gap-1 transition-all ease-in-out duration-300`}>
+                <div className={`w-8 h-1 bg-black ${styles.menuli}`}></div>
+                <div className={`w-8 h-1 bg-black ${styles.menuli}`}></div>
+                <div className={`w-8 h-1 bg-black ${styles.menuli}`}></div>
               </div>
-              <div className='flex gap-8 items-center'>
+
+              <div className='flex gap-8 items-center hidden'>
                 <ul className='flex gap-5'>
                   <li>
                     <Link href="/Home" className={`${styles.a}`}>Home</Link>
