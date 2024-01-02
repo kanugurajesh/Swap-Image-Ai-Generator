@@ -6,4 +6,4 @@
 
 # Swap Ai
 
-An Open source Image generator which swaps your image with your favourite character
+An Enterprise Image generator which swaps your image with your favourite character
