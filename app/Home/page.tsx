@@ -13,7 +13,7 @@ export default function Home() {
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log({ selectedFile, userPrompt, email, gender });
-        router.push("/success");
+        router.push("/Success");
     };
 
     return (

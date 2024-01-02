@@ -21,7 +21,7 @@ export default function Home() {
                     </span>
 
                 </h1>
-                <p className="text-2xl">Swap ai is a generative ai tool to swap your images with your fantasy avatar</p>
+                <p className="text-xl">Swap ai is a generative ai tool to swap your images with your fantasy avatar</p>
                 <Link href="/Home" className={`font-bold text-xl max-w-max py-3 px-10 rounded-sm transition-all ease-in-out duration-400 ${styles.button} relative`}>
                     <p className={styles.p}>Get Started</p>
                 </Link>

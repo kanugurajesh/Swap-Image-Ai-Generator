@@ -110,6 +110,7 @@
         top: 100%;
         background-color: #e84949;
         width: 100%;
+        height: 100vh;
         transition: left 0.3s ease-in-out;
         padding: 100px;
         z-index: 10;
@@ -117,6 +118,7 @@
 
     .menubar ul {
         flex-direction: column;
+        gap: 15px;
     }
 
     .menu.click ~ .menubar {
