@@ -18,7 +18,9 @@ export default function Home() {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         try {
-            if (!selectedFile) return;
+            if (!selectedFile) {
+                return toast.error("Please upload a picture");
+            }
 
             const body = {
                 email: email,

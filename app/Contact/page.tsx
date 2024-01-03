@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image"
 import Link from "next/link"
 import toast, { Toaster } from "react-hot-toast"
@@ -23,14 +24,6 @@ export default function Contact() {
         return re.test(name)
     }
 
-    // create a function to validate the message
-    // const validateMessage = (message: string) => {
-    //     const re = /^[a-zA-Z ]{2,30}$/
-    //     return re.test(message)
-    // }
-
-    // create a function to validate the form
-
     const validateForm = () => {
         if (!validateName(name)) {
             toast.error("Please enter the valid name")
@@ -40,13 +33,9 @@ export default function Contact() {
             toast.error("Please enter the valid email")
             return false
         }
-        // if (!validateMessage(message)) {
-        //     toast.error("Please enter the valid message")
-        //     return false
-        // }
         return true
     }
-    
+
     const handleSubmit = async () => {
         if (validateForm()) {
 
@@ -58,7 +47,7 @@ export default function Contact() {
 
             try {
 
-                const response = await emailjs.send(serviceId,templateId,{
+                const response = await emailjs.send(serviceId, templateId, {
                     from_name: name,
                     email_id: email,
                     message: message,
@@ -72,7 +61,7 @@ export default function Contact() {
             } catch (error) {
                 toast.error("Something went wrong please try again later")
             }
-            
+
         }
     }
 
@@ -123,13 +112,13 @@ export default function Contact() {
                     <label htmlFor="text-input" className="font-bold">Name:</label>
                     <input type="text" id="text-input" className="border outline-0 border-1 h-10 rounded-md p-2 font-normal w-80 focus:border-blue-500 focus:border-2" placeholder="Enter the name" value={name} onChange={(e) => {
                         setName(e.target.value)
-                    }}/>
+                    }} />
                 </div>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="email-input" className="font-bold">Email:</label>
                     <input type="email" id="email-input" className="border outline-0 border-1 h-10 rounded-md p-2 font-normal w-80 focus:border-blue-500 focus:border-2" placeholder="Enter the email" value={email} onChange={(e) => {
                         setEmail(e.target.value)
-                    }}/>
+                    }} />
                 </div>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="textarea-input" className="font-bold">Message:</label>
@@ -141,7 +130,7 @@ export default function Contact() {
                 </div>
                 <div>
                     {/* @ts-ignore */}
-                    <button className="w-full font-bold bg-black hover:bg-white hover:text-black text-white px-5 py-3 rounded-md border border-2 transition ease-in-out mb-10 lg:mb-0" onClick={()=>handleSubmit()}>Send Message</button>
+                    <button className="w-full font-bold bg-black hover:bg-white hover:text-black text-white px-5 py-3 rounded-md border border-2 transition ease-in-out mb-10 lg:mb-0" onClick={() => handleSubmit()}>Send Message</button>
                 </div>
             </div>
         </div>
