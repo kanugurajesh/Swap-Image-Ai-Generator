@@ -1,13 +1,6 @@
 import { NextResponse, NextRequest } from 'next/server';
 import Replicate from 'replicate';
 
-// stop nextjs default parsing
-// export const config = {
-//     api: {
-//         bodyParser: false,
-//     },
-// };
-
 const replicate = new Replicate({
     auth: process.env.REPLICATE_API_TOKEN,
 });
@@ -18,7 +11,7 @@ export const GET = async () => {
 
 export const POST = async (request: NextRequest) => {
     // @ts-ignore
-    const { email, image, gender, userPrompt } = await request.body;
-    console.log(email)
+    const body = await request.json();
+    const { email, gender, userPrompt, selectedFile } = body;
     return NextResponse.json({ message: 'Operation successful' }, { status: 200 });
 };

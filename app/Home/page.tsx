@@ -18,6 +18,7 @@ export default function Home() {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         try {
+            
             if (!selectedFile) {
                 return toast.error("Please upload a picture");
             }
@@ -37,6 +38,7 @@ export default function Home() {
                 },
                 body: JSON.stringify(body),
             });
+
             //👇🏻 redirect to Success page
             router.push("/Success");
         } catch (err) {
