@@ -1,9 +1,11 @@
 "use client";
+
 import Head from "next/head";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
+
     const [selectedFile, setSelectedFile] = useState<File>();
     const [userPrompt, setUserPrompt] = useState<string>("");
     const [email, setEmail] = useState<string>("");
@@ -12,10 +14,25 @@ export default function Home() {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log({ selectedFile, userPrompt, email, gender });
-        router.push("/Success");
-    };
-
+        try {
+          if (!selectedFile) return;
+          const formData = new FormData();
+          formData.append("image", selectedFile);
+          formData.append("gender", gender);
+          formData.append("email", email);
+          formData.append("userPrompt", userPrompt);
+          // 👇🏻 post data to server's endpoint
+          await fetch("/api/generate", {
+            method: "POST",
+            body: formData,
+          });
+          //👇🏻 redirect to Success page
+          router.push("/Success");
+        } catch (err) {
+          console.error({ err });
+        }
+      };
+      
     return (
         <main className='flex items-center md:p-8 px-4 w-full justify-center min-h-screen flex-col'>
             <Head>

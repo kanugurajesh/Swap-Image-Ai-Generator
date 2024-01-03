@@ -11,9 +11,8 @@
   "dependencies": {
     "@clerk/nextjs": "^4.29.1",
     "@emailjs/browser": "^3.11.0",
-    "@trigger.dev/nextjs": "^2.3.8",
-    "@trigger.dev/react": "^2.3.8",
-    "@trigger.dev/sdk": "^2.3.8",
+    "@types/formidable": "^3.4.5",
+    "formidable": "^3.5.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
@@ -22,7 +21,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.10.6",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
