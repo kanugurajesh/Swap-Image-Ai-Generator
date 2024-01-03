@@ -31,13 +31,21 @@ export default function Home() {
             }
 
             // 👇🏻 post data to server's endpoint
-            await fetch("/api/generate", {
+            const data = await fetch("/api/generate", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(body),
             });
+
+            const response = await data.json();
+
+            if (response.error) {
+                return toast.error(response.error);
+            }
+
+            console.log({ response });
 
             //👇🏻 redirect to Success page
             router.push("/Success");
