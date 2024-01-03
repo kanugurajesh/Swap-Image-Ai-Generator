@@ -12,12 +12,15 @@
     "@clerk/nextjs": "^4.29.1",
     "@emailjs/browser": "^3.11.0",
     "@types/formidable": "^3.4.5",
-    "formidable": "^3.5.1",
+    "@uploadthing/react": "^6.1.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
     "react-simple-typewriter": "^5.0.1",
+    "replicate": "^0.25.2",
+    "resend": "^2.1.0",
+    "uploadthing": "^6.1.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {

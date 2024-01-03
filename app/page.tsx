@@ -1,8 +1,10 @@
 "use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import styles from '@/styles/Root.module.css'
 import { Typewriter } from 'react-simple-typewriter'
+
 export default function Home() {
     return (
         <main className="p-10 flex justify-around items-center h-screen">
@@ -19,7 +21,6 @@ export default function Home() {
                             delaySpeed={1000}
                         />
                     </span>
-
                 </h1>
                 <p className="text-xl">Swap ai is a generative ai tool to swap your images with your fantasy avatar</p>
                 <Link href="/Home" className={`font-bold text-xl max-w-max py-3 px-10 rounded-sm transition-all ease-in-out duration-400 ${styles.button} relative`}>
