@@ -10,7 +10,7 @@ export default function Pricing() {
           <p>Swap-Ai's free plan allows you to swap your image with your favorite character for free! You can download the image from the website and you will also receive the email.</p>
 
           <h3 className="font-black text-xl">Features</h3>
-          <ul>
+          <ul className={`${styleP.ul}`}>
             <li>Swap your image with your favorite character</li>
             <li>Download the image from the website but attribution is needed</li>
             <li>Receive emails from the website</li>
