@@ -7,14 +7,17 @@ import "@uploadthing/react/styles.css";
 import { UploadButton } from "@/utils/uploadthing";
 import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
+import { BeatLoader } from "react-spinners";
 
 export default function Home() {
 
     const [email, setEmail] = useState<string>("");
     const [gender, setGender] = useState<string>("");
     const [userPrompt, setUserPrompt] = useState<string>("");
+    const [click, setClick] = useState<boolean>(false);
     const [selectedFile, setSelectedFile] = useState<string>();
     const [imageURl, setImageURl] = useState<string>("");
+    const [emailSent, setEmailSent] = useState<boolean>(false);
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
@@ -82,7 +85,7 @@ export default function Home() {
                 return toast.error(emailResponse.error);
             }
 
-            console.log({ emailResponse });
+            setEmailSent(true);
 
             toast.success("Email sent successfully!");
         }
@@ -160,9 +163,16 @@ export default function Home() {
                         />
                         <button
                             type="submit"
+                            onClick={() => setClick(true)}
                             className="mt-5 rounded bg-blue-500 px-6 py-4 text-lg text-white hover:bg-blue-700"
                         >
-                            Generate Avatar
+                            {click ? (
+                                <BeatLoader size={8} color='white' />
+                            ) : (
+                                <span>
+                                    Generate Image
+                                </span>
+                            )}
                         </button>
                     </form>
                 </main>
@@ -171,7 +181,13 @@ export default function Home() {
                     <Image src={imageURl} width={200} height={200} alt="image" className="mb-10" />
                     <h2 className='font-bold text-3xl mb-2'>Thank you! 🌟</h2>
                     <p className='mb-4 text-center'>
-                        Your image will be delivered to your email, once it is ready! 💫
+                        {emailSent ? (
+                            <span>
+                                Your avatar has been sent to your email address
+                            </span>
+                        ) : (
+                            <BeatLoader size={8} color='black' />
+                        )}
                     </p>
                     <Link
                         href='/'
