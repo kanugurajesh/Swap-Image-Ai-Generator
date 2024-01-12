@@ -10,9 +10,11 @@ export const GET = async () => {
 };
 
 export const POST = async (request: NextRequest) => {
+
     // @ts-ignore
     const body = await request.json();
-    const { email, gender, userPrompt, selectedFile } = body;
+
+    const { gender, userPrompt, selectedFile } = body;
 
     const prompt = userPrompt ? userPrompt : `Generate a image of a ${gender}`;
 
@@ -51,7 +53,7 @@ export const POST = async (request: NextRequest) => {
     }
 
     // @ts-ignore
-    const swapppedImage = SwapImage.image;
+    const swapppedImage = SwapImage.image as string;
 
     return NextResponse.json({ imageURl: swapppedImage }, { status: 200 })
 };
