@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 /* remove scrollbar */
-
 body::-webkit-scrollbar {
   display: none;
 }
