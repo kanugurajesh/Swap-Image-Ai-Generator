@@ -18,7 +18,7 @@ export default function Pricing() {
 
           <h3 className="font-black text-xl">Limitations</h3>
           <ul>
-            <li>100 conversion / month</li>
+            <li>100 conversions / month</li>
           </ul>
 
           <h3 className="font-black text-xl">Pricing</h3>

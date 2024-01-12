@@ -23,3 +23,9 @@
     border-radius: 10px;
     width: 300px;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+}
