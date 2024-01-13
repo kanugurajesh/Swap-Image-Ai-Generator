@@ -8,6 +8,7 @@ import { UploadButton } from "@/utils/uploadthing";
 import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import { BeatLoader } from "react-spinners";
+import styles from "@/styles/Root.module.css";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
     const [selectedFile, setSelectedFile] = useState<string>();
     const [imageURl, setImageURl] = useState<string>("");
     const [emailSent, setEmailSent] = useState<boolean>(false);
+    const [receivedEmail, setReceivedEmail] = useState<boolean>(false);
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
@@ -90,7 +92,7 @@ export default function Home() {
             toast.success("Email sent successfully!");
         }
 
-        if (imageURl) {
+        if (imageURl && receivedEmail) {
             sendEmail();
         }
 
@@ -100,7 +102,11 @@ export default function Home() {
         <div>
             <Toaster />
             {!imageURl ? (
-                <main className="flex min-h-screen w-full flex-col items-center justify-center px-4 md:p-8">
+                <main className="flex min-h-screen w-full flex-col items-center justify-center px-4 md:p-8 relative">
+                    <div className={`${styles.toggleButton} ${receivedEmail ? styles.receivedEmail : ""}`} onClick={() => setReceivedEmail(!receivedEmail)}>
+                        <div>
+                        </div>
+                    </div>
                     <Head>
                         <title>Avatar Generator</title>
                     </Head>

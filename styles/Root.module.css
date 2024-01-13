@@ -84,6 +84,31 @@
     display: flex;
 }
 
+.toggleButton {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    z-index: 10;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    transition: all 1s ease-in-out;
+    border: 2px solid black;
+}
+
+.toggleButton div {
+    width: 18px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.receivedEmail:hover div {
+    float: right;
+}
+
 @media (max-width: 750px) {
 
     .menu {
