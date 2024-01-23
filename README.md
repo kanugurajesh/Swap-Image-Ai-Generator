@@ -11,7 +11,7 @@ How many of you have fantasies e.g you imagine yourself in another person role b
 ## Features
 
 ### 1. Fantasy Avatar Generation
-   Swap Ai employs state-of-the-art AI algorithms to generate highly detailed and personalized fantasy avatars based on user preferences.
+   Swap Ai employs LLMS to generate highly detailed and personalized fantasy avatars based on user preferences.
 
 ### 2. Face Swap Technology
    Utilizing cutting-edge face swap technology, Swap Ai seamlessly replaces your real face with the generated fantasy avatar, creating a lifelike and immersive experience.
@@ -21,6 +21,22 @@ How many of you have fantasies e.g you imagine yourself in another person role b
 
 ### 4. User-Friendly Interface
    The application features an intuitive and user-friendly interface, making it easy for users to navigate.
+
+## Installation
+
+```bash
+1. Fork the repository by pressing by pressing the y type icon on the top
+# After completing the above steps the repository is forked to your github account now clone the repo from your account
+2. git clone https://github.com/yourusername/Swap-Image-Ai-Generator
+# Change the directory
+3. cd Swap-Image-Ai-Generator
+# Install all the dependencies
+4. npm install
+# Run the app
+5. npm run dev
+# Access the application by going to the below link
+6. https://localhost:3000
+```
 
 ## Screenshots
 
