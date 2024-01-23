@@ -59,6 +59,9 @@ export default function Home() {
 
       // 👇🏻 set image url
       setImageURl(response.imageURl);
+
+      toast.success("Image generated successfully")
+
       setLoading(false);
 
     } catch (err) {
@@ -225,7 +228,7 @@ export default function Home() {
                 {receivedEmail ? (
                   <BeatLoader size={8} color="black" />
                 ) : (
-                  <p>your image has been generated</p>
+                  <span>your image has been generated</span>
                 )}
               </span>
             )}
