@@ -28,7 +28,7 @@ export default function Home() {
                 </Link>
             </div>
             <div>
-                <Image src="/image-generator.png" alt="Swap ai" width={400} height={400} />
+                <Image src="/ai-application.png" alt="Swap ai" width={400} height={400} />
             </div>
         </main>
     );
