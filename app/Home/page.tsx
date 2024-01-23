@@ -14,7 +14,6 @@ export default function Home() {
   const [email, setEmail] = useState<string>("");
   const [gender, setGender] = useState<string>("");
   const [userPrompt, setUserPrompt] = useState<string>("");
-  const [click, setClick] = useState<boolean>(false);
   const [selectedFile, setSelectedFile] = useState<string>();
   const [imageURl, setImageURl] = useState<string>("");
   const [emailSent, setEmailSent] = useState<boolean>(false);
@@ -66,7 +65,6 @@ export default function Home() {
 
     } catch (err) {
       toast.error("Something went wrong");
-      console.log(err)
       setLoading(false);
     }
   };

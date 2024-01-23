@@ -52,9 +52,7 @@ export default function Contact() {
                     email_id: email,
                     message: message,
                 });
-
-                console.log(response)
-
+                
                 if (response.status === 200) {
                     toast.success("Message sent successfully we will get back to you soon 😀")
                 }
