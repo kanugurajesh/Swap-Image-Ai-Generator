@@ -86,9 +86,20 @@ realistic, man, waist-up, tall, broad-shouldered, 35 years, haunted, tough, clea
 
 ## Demo
 
-<a href="https://youtu.be/sSgu8wrBAnI">
-  <img src="https://github.com/kanugurajesh/Swap-Image-Ai-Generator/assets/77529419/1efac6c6-7e16-4e7d-833a-6fab16d283ee" alt="Swap Ai" width=300 height=300>
-</a>
+<table>
+  <tr>
+    <td valign="top">
+      <a href="https://youtu.be/sSgu8wrBAnI">
+        <img src="https://github.com/kanugurajesh/Swap-Image-Ai-Generator/assets/77529419/1efac6c6-7e16-4e7d-833a-6fab16d283ee" alt="Swap Ai" width=400 height=400>
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://youtu.be/fhsbT_JfpZo">
+        <img src="https://github.com/kanugurajesh/Swap-Image-Ai-Generator/assets/77529419/2062c04c-375e-4692-b59a-ee491cc01d1b" alt="Swap Ai" width=400 height=400>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## Contribution Guidelines
 
