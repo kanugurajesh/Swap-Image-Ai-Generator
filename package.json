@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.29.1",
+    "@clerk/nextjs": "^4.29.5",
     "@emailjs/browser": "^3.11.0",
     "@types/formidable": "^3.4.5",
     "@uploadthing/react": "^6.1.0",
