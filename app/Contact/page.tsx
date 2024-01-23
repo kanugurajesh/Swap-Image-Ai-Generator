@@ -83,8 +83,8 @@ export default function Contact() {
                         <p>kanugurajesh3@gmail.com</p>
                     </span>
                     <span className="flex gap-5 align-center">
-                        <Image src="/instagram.png" className="hover:scale-110 transition ease-in-out" alt="email" width={25} height={25} />
-                        <Link href="https://www.instagram.com/kanugurajesh/">
+                        <Image src="/youtube.png" className="hover:scale-110 transition ease-in-out" alt="email" width={25} height={25} />
+                        <Link href="https://www.youtube.com/@RajeshCoder">
                             <p>kanugurajesh</p>
                         </Link>
                     </span>
@@ -96,8 +96,8 @@ export default function Contact() {
                     <Link href="https://twitter.com/exploringengin1">
                         <Image src="/twitter.png" className="hover:scale-110 transition ease-in-out" alt="X" width={35} height={35} />
                     </Link>
-                    <Link href="https://www.instagram.com/kanugurajesh/">
-                        <Image src="/instagram-contact.png" className="hover:scale-110 transition ease-in-out" alt="github" width={35} height={35} />
+                    <Link href="https://www.youtube.com/@RajeshCoder/">
+                        <Image src="/youtube.png" className="hover:scale-110 transition ease-in-out" alt="github" width={35} height={35} />
                     </Link>
                     <Link href="https://github.com/kanugurajesh/">
                         <Image src="/github-contact.png" className="hover:scale-110 transition ease-in-out" alt="github" width={35} height={35} />

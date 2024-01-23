@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Gen-Ai',
-  description: 'Gen-Ai is a platform for experiencing ai models.',
+  title: 'Swap Ai',
+  description: 'Swap Ai is an application to swap your face with your favourite avatar.',
 }
 
 export default function RootLayout({
