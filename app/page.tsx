@@ -12,7 +12,7 @@ export default function Home() {
                 <h1 className="font-black text-6xl">
                     <span style={{ color: 'black', fontWeight: 'bold'}}>
                         <Typewriter
-                            words={['What is Swap AI', 'AI Image Generator', 'Swap AI']}
+                            words={['What is Swap AI', 'AI Image Generator']}
                             loop={1000}
                             cursor
                             cursorStyle='_'
