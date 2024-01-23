@@ -85,7 +85,7 @@ export default function Contact() {
                     <span className="flex gap-5 align-center">
                         <Image src="/youtube.png" className="hover:scale-110 transition ease-in-out" alt="email" width={25} height={25} />
                         <Link href="https://www.youtube.com/@RajeshCoder">
-                            <p>kanugurajesh</p>
+                            <p>@RajeshCoder</p>
                         </Link>
                     </span>
                 </div>
