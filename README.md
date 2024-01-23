@@ -40,7 +40,9 @@ How many of you have fantasies e.g you imagine yourself in another person role b
 
 ## Screenshots
 
-![Screenshot 2024-01-23 212637](https://github.com/kanugurajesh/Swap-Image-Ai-Generator/assets/77529419/5b3b7d7b-4168-4210-aa25-f6f2ecd9e5d0)
+![Screenshot 2024-01-23 215612](https://github.com/kanugurajesh/Swap-Image-Ai-Generator/assets/77529419/6afb03d4-d81d-4658-922b-4bb3000f49e1)
+
+![Screenshot 2024-01-23 215655](https://github.com/kanugurajesh/Swap-Image-Ai-Generator/assets/77529419/562492c1-48d9-43b3-9300-3e5c27cc3235)
 
 ![Screenshot 2024-01-23 212644](https://github.com/kanugurajesh/Swap-Image-Ai-Generator/assets/77529419/aec379a8-413e-4167-91ae-d4920b68017d)
 
