@@ -84,6 +84,12 @@ realistic, man, waist-up, tall, broad-shouldered, 35 years, haunted, tough, clea
 
 <br>
 
+## Demo
+
+<a href="https://youtu.be/sSgu8wrBAnI">
+  <img src="https://github.com/kanugurajesh/Swap-Image-Ai-Generator/assets/77529419/1efac6c6-7e16-4e7d-833a-6fab16d283ee" alt="Swap Ai" width=300 height=300>
+</a>
+
 ## Contribution Guidelines
 
 We welcome contributions to enhance and improve the llm app. If you have ideas or improvements, feel free to submit a pull request following our contribution guidelines.
