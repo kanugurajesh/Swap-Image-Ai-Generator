@@ -11,6 +11,7 @@ import { BeatLoader } from "react-spinners";
 import styles from "@/styles/swapImage.module.css";
 
 export default function Home() {
+  
   const [email, setEmail] = useState<string>("");
   const [gender, setGender] = useState<string>("");
   const [userPrompt, setUserPrompt] = useState<string>("");
