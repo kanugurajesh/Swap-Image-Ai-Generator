@@ -58,13 +58,11 @@ export default function Home() {
 
       // 👇🏻 set image url
       setImageURl(response.imageURl);
-
-      toast.success("Image generated successfully")
-
       setLoading(false);
 
     } catch (err) {
       toast.error("Something went wrong");
+      console.log(err)
       setLoading(false);
     }
   };
@@ -226,7 +224,7 @@ export default function Home() {
                 {receivedEmail ? (
                   <BeatLoader size={8} color="black" />
                 ) : (
-                  <span>your image has been generated</span>
+                  <p>your image has been generated</p>
                 )}
               </span>
             )}
